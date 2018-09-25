@@ -1,77 +1,45 @@
+
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .topnav {
-    position: relative;
-    overflow: hidden;
-    background-color: #333;
-  }
-
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .topnav a.active {
-    background-color: rgb(0, 51, 153);
-    color: white;
-  }
-
-  .topnav-centered a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .topnav-right {
-    float: right;
-  }
-
-</style>
-<script>
-  function profile()
-{
-  //document.getElementById("first").innerHTML="redirect to another website";
-  alert("redirect to another website");
-}
-</script>
-<head>
-  <meta charset="UTF-8">
-</head>
-<body style="background-image:url(https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
-  <div class="topnav">
-    <div class="topnav-right">
-      <a class="active" href="https://google.com" onclick="profile()">profile</a>
-
+<html >
+  <head>
+    <link rel="stylesheet" href="profile.css">
+  </head>
+  <body >
+    <div class="top" >
+      <div class="topnav">
+        <div class="topnav-left">
+          <div class="nav_icon" id="avatar" ></div>
+        </div>
+        <div>
+          <button class="nav_icon" id="icon_four" onclick="dis_middle_frame()"><span>=</span></button>
+          <button class="nav_icon" id="icon_three"><span>background</span></button>
+          <button class="nav_icon" id="icon_two"><span>link two</span></button>
+          <button class="nav_icon" id="icon_one"><span>link one</span></button>
+        </div>
+      </div>
+      <div class="left_section" >
+        <input type="range" value="30" class="scrollbar" orient="vertical"><span>light</span>
+      </div>
+      <div class="main">
+        <div class="middle_frame" id="middle_frame">
+          <img class="icon_in_middle_frame" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-question-icon.png"></img>
+          <p>TELL ME</p>
+          <p>SOMETHING</p>
+          <input id="middle_frame_input" type="text" placeholder="Enter something:">
+        </div>
+      </div>
+      <div class="right_section">
+        <p>
+          <pre>prodecer
+    EE 110 changchiajung
+          </pre>
+        </p>
+      </div>
+      <div class="bottom_section">
+        <span> value</span><input type="range" class="scrollbar">
+      </div>
     </div>
-    <a href="">LINK1</a>
-    <a href="">LINK2</a>
-    <a href="">LINK3</a>
-  </div>
+  </body>
+  <script src="profile.js"></script>
+</html>
 
-  <div >
-    <center style="color:red">
-      <h1 id="first">
-        make me happy
-      </h1>
-    </center>
-  </div>
-</body>
