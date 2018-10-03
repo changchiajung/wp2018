@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>NCKU</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="profile.js"></script>
+  </head>
+  <body onload="startweb()">
+    <div class="top" >
+      <div class="topnav">
+        <div class="topnav-left">
+          <div class="nav_icon" id="avatar" onclick="openInNewTab()"></div>
+        </div>
+        <div>
+          <button class="nav_icon" id="icon_four" onclick="dis_middle_frame()"><span>=</span></button>
+          <button class="nav_icon" id="icon_three"><span>background</span></button>
+          <button class="nav_icon" id="icon_two" onclick="dis_typeWriter_ini(' Department :  NCKU EE')"><span>Department</span></button>
+          <button class="nav_icon" id="icon_one" onclick="dis_typeWriter_ini(' Hometown : Tainan')"><span>Hometown</span></button>
+        </div>
+      </div>
+      <div class="left_section" >
+        <input type="range" value="0" class="scrollbar" orient="vertical" id="left_section_input"><span id="left_section_span">value</span>
+      </div>
+      <div class="main">
+        <div class="middle_frame" id="middle_frame_back"></div>
+        <div class="middle_frame" id="middle_frame">
+          <img class="icon_in_middle_frame" src="https://image.flaticon.com/icons/svg/906/906794.svg" onclick="question()"></img>
+          <p id="middle_frame_p"></p>
+          <input id="middle_frame_input" type="text" placeholder="Enter something:">
+        </div>
+      </div>
+      <div class="right_section">
+        <p>
+          <pre>prodecer
+    EE 110 changchiajung
+          </pre>
+        </p>
+      </div>
+      <div class="bottom_section">
+        <span id="bottom_section_span"> light</span><input type="range" class="scrollbar" value="100" id="bottom_section_input">
+      </div>
+    </div>
+  </body>
+</html>
+
